@@ -1,10 +1,15 @@
-﻿namespace CSharpOperatorsDemo
+﻿using System;
+
+namespace CSharpOperatorsDemo
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
-           ;
+            var a = 10;
+            var b = 3;
+            Console.WriteLine(a + b);
+            
         }
     }
 }
