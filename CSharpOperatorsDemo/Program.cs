@@ -2,7 +2,7 @@
 
 namespace CSharpOperatorsDemo
 {
-     class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -11,7 +11,7 @@ namespace CSharpOperatorsDemo
 
             var a = 1;
             var b = 2;
-            //var c = 3;
+            var c = 3;
 
             //Console.WriteLine(a + b);
             //Console.WriteLine((float)a / (float)b);
@@ -20,10 +20,15 @@ namespace CSharpOperatorsDemo
             //Console.WriteLine(a + b * c);
             //Console.WriteLine((a+b) * c);
 
-            Console.WriteLine(a < b); //returns true
-            Console.WriteLine(a == b); //returns false
-            Console.WriteLine(a != b); //returns true
-            Console.WriteLine(!(a != b)); //returns false, double negative
+            /* Console.WriteLine(a < b); //returns true
+             Console.WriteLine(a == b); //returns false
+             Console.WriteLine(a != b); //returns true
+             Console.WriteLine(!(a != b)); //returns false, double negative*/
+
+            Console.WriteLine(c > b && c > a); //returns true
+            Console.WriteLine(c > b && c == a); //returns false
+            Console.WriteLine(c > b || c == a); //returns true
+            Console.WriteLine(!(c > b || c == a)); //returns false
         }
     }
 }
